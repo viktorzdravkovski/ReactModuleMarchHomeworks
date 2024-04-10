@@ -1,0 +1,67 @@
+
+Sum of all even/odd n numbers:
+
+1. Input od user za n
+2. Input od user za lista
+3. Inicijalizacija na varijabla sumOfEven = 0
+4. Inicijalizacija na varijabla sumOfOdd = 0
+5. Inicijalizacija na varijabla index = 0
+6. Proverka dali index < n
+	6.1 Ako e tochno, zemi go elementot na pozicija 'index' od listata i proveri dali e paren ili neparen
+		6.1.1 Ako e paren dodadi go na sumOfEven
+		6.1.2 Ako e neparen dodadi go na sumOfOdd
+	6.2 Zgolemi go 'index' za 1
+	6.3 Vrati se na chekor 5
+7. Ako index < n ne e tochno
+	7.1. Isprintaj gi sumOfEven i sumOfOdd
+8. Kraj na programata
+
+Example flow
+	n = 4, lista = [1, 2, 3, 4]
+		1. sumOfEven = 0, sumOfOdd = 0, index = 0
+
+		2. 0 < 4 -> True
+		3. lista[index] % 2 == 0 || lista[index] % 2 != 0
+			1 % 2 != 0
+		4. sumOfOdd = sumOfOdd + lista[index]
+			sumOfOdd = 0 + lista[0]
+			sumOfOdd = 0 + 1
+			sumOfOdd = 1
+		5. index = index + 1
+			index = 0 + 1, index = 1
+
+		6. 1 < 4 -> True
+		7. lista[index] % 2 == 0 || lista[index] % 2 != 0
+			2 % 2 == 0
+		8. sumOfEven = sumOfEven + lista[index]
+			sumOfEven = 0 + lista[index]
+			sumOfEven = 0 + 2
+			sumOfEven = 2
+		9. index = index + 1
+			index = 1 + 1, index = 2
+
+		10. 2 < 4 -> True
+		11. lista[index] % 2 == 0 || lista[index] % 2 != 0
+			3 % 2 != 0
+		12. sumOfOdd = sumOfOdd + lista[index]
+			sumOfOdd = 1 + lista[index]
+			sumOfOdd = 1 + 3
+			sumOfOdd = 4
+		13. index = index + 1
+			index = 2 + 1, index = 3
+
+		14. 3 < 4 -> True
+		15. lista[index] % 2 == 0 || lista[index] % 2 != 0
+			4 % 2 == 0
+		16. sumOfEven = sumOfEven + lista[index]
+			sumOfEven = 2 + lista[index]
+			sumOfEven = 2 + 4
+			sumOfEven = 6
+		17. index = index + 1
+			index = 3 + 1, index = 4
+
+		18. 4 < 4 -> False
+		19. Print sumOfOdd = 4
+		20. Print sumOfEven = 6
+		
+
