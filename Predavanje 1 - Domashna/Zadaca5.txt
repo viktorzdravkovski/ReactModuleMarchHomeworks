@@ -1,0 +1,26 @@
+
+Average of 2 numbers:
+
+1. Input od user za a
+2. Input od user za b
+3. Inicijalizacija na varijabla sum = 0
+4. Inicijalizacija na varijabla average = 0
+5. Soberi gi a i b vo sum
+6. Proveri dali sum e 0
+	6.1 Ako e => so nula ne se deli
+7. Ako e pogolemo od 0 podeli go sum so 2
+8. Isprintaj go average ili return error
+8. Kraj na programata
+
+Example flow
+	a = 5, b = 13
+		1. sum = 0, average = 0
+		2. sum = sum + a + b
+			sum = 0 + 5 + 13
+			sum = 18
+		3. average = sum / 2
+			average = 18 / 2
+			average = 9
+		4. Print average
+		
+
