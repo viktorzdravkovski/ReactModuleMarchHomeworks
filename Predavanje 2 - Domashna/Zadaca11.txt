@@ -1,0 +1,149 @@
+
+Write a program of the following serial: 2 + 5 + 10 + 17 + 26 + 37+ … + 145 = ? 
+
+1. Deklarirame varijabla a = 2
+2. Deklarirame varijabla b = 3
+2. Deklarirame varijabla sum = 0;
+3. Zgolemi ja sum za a
+5. Zgolemi ja a za b
+6. Proveri dali a <= 145
+7. Ako e tochno:
+	7.1 Zgolemi ja b za 2
+	7.2 Vrati se na cekor 3
+8. Ako ne e tochno, isprintaj go 'sum'
+9. Kraj na programata
+
+
+Example flow
+		1. a = 2, b = 3, sum = 0
+
+		2. sum = sum + a
+			sum = 0 + 2
+			sum = 2
+		3. a = a + b
+			a = 2 + 3
+			a = 5
+		4. a <= 145 -> True (5 < 145)
+		5. b = b + 2
+			b = 3 + 2 
+			b = 5
+
+		6. sum = sum + a
+			sum = 2 + 5
+			sum = 7
+		7. a = a + b
+			a = 5 + 5
+			a = 10
+		8. a <= 145 -> True (10 < 145)
+		9. b = b + 2
+			b = 5 + 2
+			b = 7
+
+		10. sum = sum + a
+			sum = 7 + 10
+			sum = 17
+		11. a = a + b
+			a = 10 + 7
+			a = 17
+		12. a <= 145 -> True (17 < 145)
+		13. b = b + 2
+			b = 7 + 2
+			b = 9
+
+		14. sum = sum + a
+			sum = 17 + 17
+			sum = 34
+		15. a = a + b
+			a = 17 + 9
+			a = 26
+		16. a <= 145 -> True (26 < 145)
+		17. b = b + 2
+			b = 9 + 2
+			b = 11
+
+		18. sum = sum + a
+			sum = 34 + 26
+			sum = 60
+		19. a = a + b
+			a = 26 + 11
+			a = 37
+		20. a <= 145 -> True (37 < 145)
+		21. b = b + 2
+			b = 11 + 2
+			b = 13
+
+		22. sum = sum + a
+			sum = 60 + 37
+			sum = 97
+		23. a = a + b
+			a = 37 + 13
+			a = 50
+		24. a <= 145 -> True (50 < 145)
+		25. b = b + 2
+			b = 13 + 2
+			b = 15
+
+		26. sum = sum + a
+			sum = 97 + 50
+			sum = 147
+		27. a = a + b
+			a = 50 + 15
+			a = 65
+		28. a <= 145 -> True (65 < 145)
+		29. b = b + 2
+			b = 15 + 2
+			b = 17
+		
+		30. sum = sum + a
+			sum = 147 + 65
+			sum = 212
+		31. a = a + b
+			a = 65 + 17
+			a = 82
+		32. a <= 145 -> True (82 < 145)
+		33. b = b + 2
+			b = 17 + 2
+			b = 19
+		
+		34. sum = sum + 2
+			sum = 212 + 82
+			sum = 294
+		35. a = a + b
+			a = 82 + 19
+			a = 101
+		36. a <= 145 -> True (101 < 145)
+		37. b = b + 2
+			b = 19 + 2
+			b = 21
+
+		38. sum = sum + a
+			sum = 294 + 101
+			sum = 395
+		39. a = a + b
+			a = 101 + 21
+			a = 122
+		40. a <= 145 -> True (122 < 145)
+		41. b = b + 2
+			b = 21 + 2
+			b = 23
+
+		42. sum = sum + a
+			sum = 395 + 122
+			sum = 517
+		43. a = a + b
+			a = 122 + 23
+			a = 145
+		44. a <= 145 -> True (145 = 145)
+		45. b = b + 2
+			b = 23 + 2
+			b = 25
+
+		46. sum = sum + a
+			sum = 517 + 145
+			sum = 662
+		47. a = a + b
+			a = 145 + 25
+			a = 170
+		48. a <= 145 -> False
+		49. Print sum
+			print 662
