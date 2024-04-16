@@ -1,0 +1,12 @@
+#cards {
+    border: 5px solid lightblue;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    background-color: bisque;
+}
+
+#cards button {
+    background-color: aqua;
+    margin-bottom: 3%;
+    border: 5px solid lightblue;
+}

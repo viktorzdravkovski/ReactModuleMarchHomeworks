@@ -1,3 +1,8 @@
-<h1>React Module group March Homeworks repository</h1>
+# React + Vite
 
-<h4>Clone the repository locally and create your own branch using 'git branch _name_of_branch_' and then switch to it with 'git checkout _name_of_branch_'</h4>
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
